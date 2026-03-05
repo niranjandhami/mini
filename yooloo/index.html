@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnOnline - Online Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">L</div>
+                <span class="logo-text">LearnOnline</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-ghost">Login</a>
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-inner">
+                <div class="hero-badge">🚀 New Courses Available</div>
+                <h1 class="hero-title">Master New Skills with Expert-Led Courses</h1>
+                <p class="hero-subtitle">Join thousands of learners and transform your career with our comprehensive online courses taught by industry professionals.</p>
+                
+                <!-- Search Box -->
+                <div class="hero-search">
+                    <input type="text" id="heroSearch" placeholder="Search for courses..." class="search-input">
+                    <button class="search-btn" id="heroSearchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#courses" class="btn btn-white">Explore Courses</a>
+                    <a href="#features" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Hero Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50000">0</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="200">0</span>
+                        <span class="stat-label">Courses</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Instructors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Shapes -->
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose LearnOnline?</h2>
+                    <p>Experience learning like never before</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Lectures</h3>
+                        <p>High-quality video content from industry experts with lifetime access</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certificates</h3>
+                        <p>Earn recognized certificates upon course completion</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Mentors</h3>
+                        <p>Learn from experienced professionals in each field</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>Lifetime Access</h3>
+                        <p>Access your courses anytime, anywhere, forever</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Courses</h2>
+                    <p>Choose from our wide range of industry-recognized courses</p>
+                </div>
+
+                <!-- Course Filters -->
+                <div class="course-filters">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="science">Data Science</button>
+                </div>
+
+                <div class="courses-grid" id="coursesGrid">
+                    <article class="course-card" data-category="technology">
+                        <div class="course-image">
+                            <span class="course-badge">Bestseller</span>
+                            <div class="course-icon">💻</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Computer Science</h3>
+                            <p>Master programming, algorithms, data structures, and software development fundamentals.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.8</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 12,450
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="cs">Preview Course</button>
+                        </div>
+                    </article>
+
+                    <article class="course-card" data-category="business">
+                        <div class="course-image">
+                            <span class="course-badge">Popular</span>
+                            <div class="course-icon">📊</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Business Management</h3>
+                            <p>Learn strategic marketing, finance, leadership, and organizational management skills.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 8,320
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="business">Preview Course</button>
+                        </div>
+                    </article>
+
+                    <article class="course-card" data-category="engineering">
+                        <div class="course-image">
+                            <div class="course-icon">⚙️</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Engineering</h3>
+                            <p>Explore mechanical, electrical, and civil engineering concepts and practical applications.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.5</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 5,670
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="engineering">Preview Course</button>
+                        </div>
+                    </article>
+
+                    <article class="course-card" data-category="science">
+                        <div class="course-image">
+                            <span class="course-badge">New</span>
+                            <div class="course-icon">📈</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Data Science</h3>
+                            <p>Dive into Python, machine learning, data analysis, and visualization techniques.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 9,890
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="datascience">Preview Course</button>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card" data-category="technology">
+                        <div class="course-image">
+                            <div class="course-icon">🎨</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Web Development</h3>
+                            <p>Learn HTML, CSS, JavaScript, React and modern web development frameworks.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 15,230
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="webdev">Preview Course</button>
+                        </div>
+                    </article>
+                    
+<article class="course-card" data-category="business">
+                        <div class="course-image">
+                            <span class="course-badge">Trending</span>
+                            <div class="course-icon">📱</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Digital Marketing</h3>
+                            <p>Master SEO, social media marketing, content strategy, and online advertising.</p>
+                            <div class="course-meta">
+                                <span class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.6</span>
+                                </span>
+                                <span class="course-enrolled">
+                                    <i class="fas fa-user-graduate"></i> 7,540
+                                </span>
+                            </div>
+                            <button class="btn btn-primary course-preview-btn" data-course="marketing">Preview Course</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Students Say</h2>
+                    <p>Hear from our successful learners</p>
+                </div>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student">
+                            </div>
+                            <p class="testimonial-text">"LearnOnline transformed my career! The courses are well-structured and the instructors are amazing. I got promoted within 3 months of completing the Web Development course."</p>
+                            <h4 class="testimonial-name">Sarah Johnson</h4>
+                            <span class="testimonial-role">Web Developer at TechCorp</span>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student">
+                            </div>
+                            <p class="testimonial-text">"The Data Science course was phenomenal! The hands-on projects and real-world examples helped me land my dream job as a Data Analyst."</p>
+                            <h4 class="testimonial-name">Michael Chen</h4>
+                            <span class="testimonial-role">Data Analyst at FinanceHub</span>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Student">
+                            </div>
+                            <p class="testimonial-text">"I love the flexibility of LearnOnline! I could learn at my own pace while working full-time. The certificates are recognized by top employers."</p>
+                            <h4 class="testimonial-name">Emily Rodriguez</h4>
+                            <span class="testimonial-role">Marketing Manager at GlobalInc</span>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-controls">
+                        <button class="testimonial-btn prev-btn" id="prevTestimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="testimonial-dots" id="testimonialDots"></div>
+                        <button class="testimonial-btn next-btn" id="nextTestimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Learning?</h2>
+                    <p>Join thousands of students already learning on LearnOnline</p>
+                    <div class="cta-buttons">
+                        <a href="register.html" class="btn btn-white btn-lg">Get Started Free</a>
+                        <a href="#courses" class="btn btn-outline-white">Browse Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Course Preview Modal -->
+    <div class="modal" id="courseModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon">💻</div>
+                <h2 id="modalTitle">Computer Science</h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription">Master programming, algorithms, data structures, and software development fundamentals.</p>
+                <div class="modal-details">
+                    <div class="modal-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>Duration: 12 weeks</span>
+                    </div>
+                    <div class="modal-detail">
+                        <i class="fas fa-video"></i>
+                        <span>50+ Video Lectures</span>
+                    </div>
+                    <div class="modal-detail">
+                        <i class="fas fa-file-code"></i>
+                        <span>25+ Projects</span>
+                    </div>
+                    <div class="modal-detail">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate Included</span>
+                    </div>
+                </div>
+                <div class="modal-curriculum">
+                    <h3>What You'll Learn</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Programming Fundamentals</li>
+                        <li><i class="fas fa-check"></i> Data Structures & Algorithms</li>
+                        <li><i class="fas fa-check"></i> Web Development Basics</li>
+                        <li><i class="fas fa-check"></i> Database Management</li>
+                        <li><i class="fas fa-check"></i> Software Engineering Principles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="register.html" class="btn btn-primary btn-lg" style="width: 100%;">Enroll Now - Free</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 LearnOnline. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
