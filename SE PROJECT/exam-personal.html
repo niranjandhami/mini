@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Registration - Step 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📋 Exam Registration</h1>
+  </header>
+
+  <div class="container">
+    <div class="steps">
+      <div class="step active">
+        <strong>Step 1</strong><br>Personal Details
+      </div>
+      <div class="step">Step 2<br>Education</div>
+      <div class="step">Step 3<br>Documents</div>
+    </div>
+
+    <div class="card">
+      <h2>Basic Profile & Personal Details</h2>
+      <div id="message"></div>
+      
+      <form id="personalForm">
+        <div class="form-group">
+          <label>Full Name (Government ID matching) *</label>
+          <input type="text" name="fullName" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Email ID *</label>
+          <input type="email" name="email" required>
+        </div>
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" name="mobile" pattern="[0-9]{10}" required>
+          </div>
+          <div class="form-group">
+            <label>Date of Birth *</label>
+            <input type="date" name="dob" required>
+          </div>
+        </div>
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Gender *</label>
+            <select name="gender" required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Country *</label>
+            <select name="country" required>
+              <option value="">Select</option>
+              <option value="India">India</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label>State *</label>
+            <input type="text" name="state" required>
+          </div>
+          <div class="form-group">
+            <label>City *</label>
+            <input type="text" name="city" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Address *</label>
+          <textarea name="address" rows="3" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>Pin Code *</label>
+          <input type="text" name="pincode" pattern="[0-9]{6}" required>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Next: Education Details</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Complete</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🎉 Success!</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="alert alert-success" style="text-align: center;">
+        <h2>Exam Registration Completed Successfully!</h2>
+        <p>Your registration has been submitted. Registration ID: <strong id="regId"></strong></p>
+        <p>Check your dashboard for exam details and hall ticket.</p>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="dashboard.html" class="btn btn-success">Go to Dashboard</a>
+        <a href="index.html" class="btn btn-secondary">← Home</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Generate registration ID
+    const regId = 'REG' + Date.now();
+    document.getElementById('regId').textContent = regId;
+    
+    // Save registration (localStorage demo)
+    const user = JSON.parse(localStorage.getItem('currentUser') || '{}');
+    const course = localStorage.getItem('selectedCourse') || 'Unknown';
+    const registrations = JSON.parse(localStorage.getItem('registrations') || '[]');
+    registrations.push({
+      id: regId,
+      userId: user.id,
+      course,
+      date: new Date().toISOString(),
+      status: 'confirmed'
+    });
+    localStorage.setItem('registrations', JSON.stringify(registrations));
+  </script>
+</body>
+</html>

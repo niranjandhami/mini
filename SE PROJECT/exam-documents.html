@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Registration - Step 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📋 Exam Registration</h1>
+  </header>
+
+  <div class="container">
+    <div class="steps">
+      <div class="step">
+        <strong>✓ Step 1</strong><br>Personal Details
+      </div>
+      <div class="step">
+        <strong>✓ Step 2</strong><br>Educational Details
+      </div>
+      <div class="step active">
+        <strong>Step 3</strong><br>Documents
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Document Upload</h2>
+      <div id="message"></div>
+      
+      <form id="documentsForm">
+        <div class="form-group">
+          <label>Passport Size Photo (JPG/JPEG, 10-200 KB)</label>
+          <div class="file-upload" onclick="document.getElementById('photo').click()">
+            <input type="file" id="photo" accept="image/jpeg,image/jpg" style="display: none;">
+            <p>📷 Click to upload photo</p>
+            <small>10-200 KB, JPG/JPEG only</small>
+          </div>
+          <div id="photoPreview"></div>
+        </div>
+        
+        <div class="form-group">
+          <label>Signature (JPG/JPEG, 4-30 KB)</label>
+          <div class="file-upload" onclick="document.getElementById('signature').click()">
+            <input type="file" id="signature" accept="image/jpeg,image/jpg" style="display: none;">
+            <p>✍️ Click to upload signature</p>
+            <small>4-30 KB, JPG/JPEG only</small>
+          </div>
+          <div id="signaturePreview"></div>
+        </div>
+        
+        <div class="form-group">
+          <label>ID Proof (Aadhaar/Passport) *</label>
+          <div class="file-upload" onclick="document.getElementById('idProof').click()">
+            <input type="file" id="idProof" accept=".jpg,.jpeg,.pdf" style="display: none;">
+            <p>🆔 Click to upload ID proof</p>
+            <small>Aadhaar, Passport, or other valid ID</small>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Category Certificate (Optional)</label>
+          <div class="file-upload" onclick="document.getElementById('categoryCert').click()">
+            <input type="file" id="categoryCert" accept=".jpg,.jpeg,.pdf" style="display: none;">
+            <p>📄 Click to upload (if applicable)</p>
+            <small>SC/ST/OBC/EWS certificate</small>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Complete Registration</button>
+        <a href="exam-education.html" class="btn btn-secondary" style="margin-top: 1rem; display: block;">← Back</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

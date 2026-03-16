@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Registration - Step 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📋 Exam Registration</h1>
+  </header>
+
+  <div class="container">
+    <div class="steps">
+      <div class="step">
+        <strong>✓ Step 1</strong><br>Personal Details
+      </div>
+      <div class="step active">
+        <strong>Step 2</strong><br>Educational Details
+      </div>
+      <div class="step">Step 3<br>Documents</div>
+    </div>
+
+    <div class="card">
+      <h2>Educational & Institutional Details</h2>
+      <div id="message"></div>
+      
+      <form id="educationForm">
+        <div class="form-group">
+          <label>Profession *</label>
+          <select name="profession" required>
+            <option value="">Select</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Professional">Professional</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Highest Qualification *</label>
+          <input type="text" name="qualification" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Expected Year of Graduation *</label>
+          <input type="number" name="gradYear" min="2024" max="2030" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Academic Bank of Credits (ABC ID)</label>
+          <input type="text" name="abcId">
+        </div>
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label>College State *</label>
+            <input type="text" name="collegeState" required>
+          </div>
+          <div class="form-group">
+            <label>College Name *</label>
+            <input type="text" name="collegeName" required>
+          </div>
+        </div>
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label>University Name *</label>
+            <input type="text" name="universityName" required>
+          </div>
+          <div class="form-group">
+            <label>Roll/Registration Number *</label>
+            <input type="text" name="rollNumber" required>
+          </div>
+        </div>
+        
+
+        
+        <button type="submit" class="btn btn-success">Next: Documents</button>
+        <a href="dashboard.html" class="btn btn-secondary" style="margin-top: 1rem; display: block;">← Back</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
