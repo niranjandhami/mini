@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📚 Select Your Course</h1>
+    <button id="logout" class="btn btn-secondary" style="position: absolute; right: 2rem; top: 1.5rem; width: auto;">Logout</button>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Select Course to Register for Exam</h2>
+      <div id="registeredCourses" style="margin-bottom: 2rem;"></div>
+      
+      <div id="courseSelection">
+        <h3>Select Course Category</h3>
+        <div id="categories"></div>
+      </div>
+      <div id="courseList"></div>
+      <div id="courseListWithDates" style="margin-top: 2rem;">
+        <h3>All Courses with Exam Dates</h3>
+        <div id="courseDatesList"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="script-clean.js"></script>
+</body>
+</html>

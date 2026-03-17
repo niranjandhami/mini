@@ -1,0 +1,43 @@
+[
+  {
+    "category": "1. Professional & Technology Courses",
+    "courses": [
+      {"id": "tech1", "name": "Python for Data Science — Exam: 15 June 2026", "examDate": "2026-06-15"},
+      {"id": "tech2", "name": "Introduction to Machine Learning — Exam: 20 June 2026", "examDate": "2026-06-20"},
+      {"id": "tech3", "name": "Ethical Hacking — Exam: 25 June 2026", "examDate": "2026-06-25"},
+      {"id": "tech4", "name": "Data Structures and Algorithms — Exam: 30 June 2026", "examDate": "2026-06-30"},
+      {"id": "tech5", "name": "Android Mobile Application Development — Exam: 5 July 2026", "examDate": "2026-07-05"},
+      {"id": "tech6", "name": "Advanced C++ — Exam: 10 July 2026", "examDate": "2026-07-10"}
+    ]
+  },
+  {
+    "category": "2. Management & Commerce",
+    "courses": [
+      {"id": "mgmt1", "name": "Financial Accounting and Analysis — Exam: 15 July 2026", "examDate": "2026-07-15"},
+      {"id": "mgmt2", "name": "Supply Chain Management — Exam: 20 July 2026", "examDate": "2026-07-20"},
+      {"id": "mgmt3", "name": "Digital Marketing — Exam: 25 July 2026", "examDate": "2026-07-25"},
+      {"id": "mgmt4", "name": "Direct Tax – Laws and Practice — Exam: 30 July 2026", "examDate": "2026-07-30"},
+      {"id": "mgmt5", "name": "Organisation Behaviour — Exam: 5 August 2026", "examDate": "2026-08-05"}
+    ]
+  },
+  {
+    "category": "3. Humanities, Arts & Education",
+    "courses": [
+      {"id": "arts1", "name": "Academic Writing — Exam: 10 August 2026", "examDate": "2026-08-10"},
+      {"id": "arts2", "name": "Animation — Exam: 15 August 2026", "examDate": "2026-08-15"},
+      {"id": "arts3", "name": "Society and Media — Exam: 20 August 2026", "examDate": "2026-08-20"},
+      {"id": "arts4", "name": "Introduction to Cyber Security — Exam: 25 August 2026", "examDate": "2026-08-25"},
+      {"id": "arts5", "name": "Early Childhood Care and Education — Exam: 30 August 2026", "examDate": "2026-08-30"}
+    ]
+  },
+  {
+    "category": "4. SWAYAM Plus (Industry-Focused)",
+    "courses": [
+      {"id": "swayam1", "name": "AI Engineer — Exam: 5 September 2026", "examDate": "2026-09-05"},
+      {"id": "swayam2", "name": "Applied Database System Engineering — Exam: 10 September 2026", "examDate": "2026-09-10"},
+      {"id": "swayam3", "name": "3D Printing and Design — Exam: 15 September 2026", "examDate": "2026-09-15"},
+      {"id": "swayam4", "name": "Soft Skills and Employability — Exam: 20 September 2026", "examDate": "2026-09-20"},
+      {"id": "swayam5", "name": "Science of Yoga — Exam: 25 September 2026", "examDate": "2026-09-25"}
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "centers": ["Online", "Exam Center 1 - Delhi", "Exam Center 2 - Mumbai", "Exam Center 3 - Bangalore"],
+  "instructions": [
+    "Bring valid ID proof (Aadhaar/Passport)",
+    "Arrive 30 minutes before exam",
+    "No electronic devices allowed",
+    "Report to assigned center/room",
+    "Follow invigilator instructions"
+  ]
+}
